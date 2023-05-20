@@ -14,7 +14,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css' integrity='sha512-0yYhCyiMB+6XOis4qvWA42kPkKb54+uMaOhbsta6m+aQ7cZOm5hzERPrRkkknlpEdoxVCwYui+yM0jRazpDFuA==' crossorigin='anonymous'/>
 
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="css/debug.css" type="text/css">
+    
 
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
@@ -22,7 +22,8 @@
 </head>
 
 <body>
-    <header class="fixed-top bg-white">
+
+    <header class="fixed-top bg-white shadow">
         <div class="container-fluid">
             <div class="navbar-default d-flex align-items-center">
 
@@ -35,16 +36,19 @@
                 <!-- NAVBAR SEARCH BAR-->
                 <nav class="flex-grow-1 ps-3">
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text btn btn-outline-secondary border border-end-0" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control border border-start-0" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="addon-wrapping">
+                        </div>
                       </form>
                 </nav>
 
                 <!-- NAVBAR ACTIONS -->
                 <nav class="d-none d-lg-block">
                     <div class="btn-group">
-                        <a href="#" class="btn btn-light rounded"><i class="bi bi-list-ul"></i></a>
-                        <a href="#" class="btn btn-light rounded"><i class="bi bi-question-circle-fill"></i></a>
-                        <a href="#" class="btn btn-light rounded"><i class="bi bi-three-dots-vertical"></i></a>
+                        <a href="#" class="btn btn-light text-secondary rounded"><i class="bi bi-list-ul"></i></a>
+                        <a href="#" class="btn btn-light text-secondary rounded"><i class="bi bi-question-circle-fill"></i></a>
+                        <a href="#" class="btn btn-light text-secondary rounded"><i class="bi bi-three-dots-vertical"></i></a>
                       </div> 
                 </nav>
 
@@ -62,6 +66,47 @@
         </div>
     </header>
 
+    <main>
+        <!--### MAIN LAYOUT ###-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1 p-0">
+
+                    <!-- MAIN - SIDEBAR -->
+                    <div class="sidebar text-start px-4 py-3">
+                        <div class="row-cols-1 text-white">
+
+                            <!-- HOME BTN -->
+                            <div class="col py-2">
+                                <a class="text-white text-decoration-none" href="#"><i class="bi bi-house-fill text-white"></i><span class="d-none d-lg-inline ps-2">Home</span></a>
+                            </div>
+
+                            <!-- STATS BTN -->
+                            <div class="col py-2">
+                                <a class="text-white text-decoration-none" href="#"><i class="bi bi-bar-chart-fill text-white"></i><span class="d-none d-lg-inline ps-2">Stats</span></a>
+                            </div>
+
+                            <!-- SIGNAL BTN -->
+                            <div class="col py-2">
+                                <a class="text-white text-decoration-none" href="#"><i class="bi bi-wifi text-white"></i><span class="d-none d-lg-inline ps-2">Signal</span></a>
+                            </div>
+
+                            <!-- OPTIONS BTN -->
+                            <div class="col px-4 py-3 fixed-bottom w-100">
+                                <a class="text-white text-decoration-none" href="#"><i class="bi bi-gear-fill text-white"></i><span class="d-none d-lg-inline ps-2">Admin</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN - CONTENT -->
+                <div class="col p-0">
+                    
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!--***** JS LINK *****-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

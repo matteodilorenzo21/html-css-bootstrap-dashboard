@@ -1,3 +1,4 @@
+
 .navbar-default .logo-sm {
     height: 50px;
     width: 50px;
@@ -9,5 +10,16 @@
 }
 
 body {
-    padding-top: 60px;
+    padding-top: 50px;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    background:linear-gradient(45deg, #0E263C 75%, #051E34 25%);
+  background:-webkit-linear-gradient(45deg, #0E263C 75%, #051E34 25%);
+}
+
+.sidebar span:hover {
+    opacity: 0.6;
 }

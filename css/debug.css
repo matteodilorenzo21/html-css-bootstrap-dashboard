@@ -5,3 +5,7 @@ nav {
 [class^="container"] {
     border: 2px solid orangered;
 }
+
+[class^="col"] {
+    border: 2px solid blue;
+}
