@@ -1,0 +1,13 @@
+.navbar-default .logo-sm {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-default .logo-lg {
+    height: 50px;
+    width: 150px;
+}
+
+body {
+    padding-top: 60px;
+}

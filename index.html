@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP LINK -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css' integrity='sha512-0yYhCyiMB+6XOis4qvWA42kPkKb54+uMaOhbsta6m+aQ7cZOm5hzERPrRkkknlpEdoxVCwYui+yM0jRazpDFuA==' crossorigin='anonymous'/>
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/debug.css" type="text/css">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <title>Bootstrap Dashboard</title>
+</head>
+
+<body>
+    <header class="fixed-top bg-white">
+        <div class="container-fluid">
+            <div class="navbar-default d-flex align-items-center">
+
+                <!-- NAVABAR LOGO -->
+                <nav>
+                    <a class="d-lg-none" href="#"><img class="logo-sm" src="img/mobile-logo.png" alt="Logo"></a>
+                    <a class="d-none d-lg-block" href="#"><img class="logo-lg" src="img/logo.svg" alt="Logo"></a>
+                </nav>
+
+                <!-- NAVBAR SEARCH BAR-->
+                <nav class="flex-grow-1 ps-3">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      </form>
+                </nav>
+
+                <!-- NAVBAR ACTIONS -->
+                <nav class="d-none d-lg-block">
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-light rounded"><i class="bi bi-list-ul"></i></a>
+                        <a href="#" class="btn btn-light rounded"><i class="bi bi-question-circle-fill"></i></a>
+                        <a href="#" class="btn btn-light rounded"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div> 
+                </nav>
+
+                <!-- NAV ACTS # BELL & DROPDOWN -->
+                <nav>
+                    <a href="#" class="btn btn-light rounded" data-bs-toggle="dropdown"><i class="bi bi-bell-fill text-warning"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                      </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!--***** JS LINK *****-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>
