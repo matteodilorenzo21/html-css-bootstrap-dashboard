@@ -9,9 +9,6 @@
     width: 150px;
 }
 
-body {
-    padding-top: 50px;
-}
 
 .sidebar {
     height: 100vh;
@@ -20,6 +17,3 @@ body {
   background:-webkit-linear-gradient(45deg, #0E263C 75%, #051E34 25%);
 }
 
-.sidebar span:hover {
-    opacity: 0.6;
-}
