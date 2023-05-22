@@ -1,3 +1,4 @@
+/***HEADER***/
 .page-header {
     height: 56px
 }
@@ -12,17 +13,21 @@
     width: 150px;
 }
 
+/***WRAPPER***/
 .wrapper {
     height: calc(100vh - 56px);
     display: flex;
 }
 
+/***SIDEBAR***/
 .sidebar {
     flex: 0 0 65px;
     background:linear-gradient(45deg, #0E263C 75%, #051E34 25%);
   background:-webkit-linear-gradient(45deg, #0E263C 75%, #051E34 25%);
 }
 
+
+/***MAIN***/
 main {
     flex: 1 1 auto;
     overflow-y: auto;
