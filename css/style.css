@@ -57,6 +57,10 @@ td span {
     font-size: 12px;
 }
 
+.bi-pen-fill:hover {
+    color: white;
+}
+
 /****** MEDIA QUERY ******/
 @media screen and (min-width: 992px) {
     .sidebar {
