@@ -26,7 +26,6 @@
   background:-webkit-linear-gradient(45deg, #0E263C 75%, #051E34 25%);
 }
 
-
 /***MAIN***/
 main {
     flex: 1 1 auto;
@@ -55,10 +54,6 @@ table img {
 
 td span {
     font-size: 12px;
-}
-
-.bi-pen-fill:hover {
-    color: white;
 }
 
 /****** MEDIA QUERY ******/
