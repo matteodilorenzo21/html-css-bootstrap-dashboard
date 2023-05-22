@@ -25,7 +25,6 @@
 
 main {
     flex: 1 1 auto;
-    background-color: white;
     overflow-y: auto;
 }
 
@@ -41,6 +40,16 @@ main {
 
 .offcanvas {
     min-width: 100vw;
+}
+
+table img {
+    height: 22px;
+    width: 22px;
+    margin-bottom: 5px;
+}
+
+td span {
+    font-size: 12px;
 }
 
 /****** MEDIA QUERY ******/
