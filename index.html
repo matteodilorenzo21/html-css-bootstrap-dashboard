@@ -14,7 +14,6 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.css' integrity='sha512-0yYhCyiMB+6XOis4qvWA42kPkKb54+uMaOhbsta6m+aQ7cZOm5hzERPrRkkknlpEdoxVCwYui+yM0jRazpDFuA==' crossorigin='anonymous'/>
 
     <!-- CSS LINK -->
-    
 
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
@@ -23,11 +22,213 @@
 
 <body>
 
-    <header class="bg-white">
-        
-    <div class="wrapper"></div>
+    <!--******************************** HEADER ***********************************-->
+    <header class="page-header bg-white">
+        <div class="container-fluid">
+            <div class="navbar-default d-flex align-items-center">
 
-    <!--***** JS LINK *****-->
+                <!-- NAVABAR LOGO -->
+                <nav>
+                    <a class="d-lg-none" href="#"><img class="logo-sm" src="img/mobile-logo.png" alt="Logo"></a>
+                    <a class="d-none d-lg-block" href="#"><img class="logo-lg" src="img/logo.svg" alt="Logo"></a>
+                </nav>
+
+                <!-- NAVBAR SEARCH BAR-->
+                <nav class="flex-grow-1 ps-3">
+                    <form class="d-flex" role="search">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text btn btn-outline-secondary border border-end-0" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control border border-start-0" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="addon-wrapping">
+                        </div>
+                      </form>
+                </nav>
+
+                <!-- NAVBAR ACTIONS -->
+                <nav class="d-none d-lg-block">
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-light text-secondary rounded"><i class="bi bi-list-ul"></i></a>
+                        <a href="#" class="btn btn-light text-secondary rounded"><i class="bi bi-question-circle-fill"></i></a>
+                        <a href="#" class="btn btn-light text-secondary rounded"><i class="bi bi-three-dots-vertical"></i></a>
+                      </div> 
+                </nav>
+
+                <!-- NAV ACTS # BELL & DROPDOWN -->
+                <nav>
+                    <a href="#" class="btn btn-light rounded" data-bs-toggle="dropdown"><i class="bi bi-bell-fill text-warning"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                      </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+        
+    <div class="wrapper">
+
+        <!--**************************** SIDEBAR **********************************-->
+        <div class="sidebar">
+            <div class="row-cols-1 text-white">
+
+                <!-- HOME BTN -->
+                <div class="col py-2 text-center text-lg-start ps-lg-4 pt-3">
+                    <a class="text-white text-decoration-none" href="#"><i class="bi bi-house-fill text-white"></i><span class="d-none d-lg-inline ps-2">Home</span></a>
+                </div>
+
+                <!-- STATS BTN -->
+                <div class="col py-2 text-center text-lg-start ps-lg-4">
+                    <a class="text-white text-decoration-none" href="#"><i class="bi bi-bar-chart-fill text-white"></i><span class="d-none d-lg-inline ps-2">Stats</span></a>
+                </div>
+
+                <!-- SIGNAL BTN -->
+                <div class="col py-2 text-center text-lg-start ps-lg-4">
+                    <a class="text-white text-decoration-none" href="#"><i class="bi bi-wifi text-white"></i><span class="d-none d-lg-inline ps-2">Signal</span></a>
+                </div>
+
+                <!-- OPTIONS BTN -->
+                <div class="col px-4 py-3 fixed-bottom w-100">
+                    <a class="text-white text-decoration-none" href="#"><i class="bi bi-gear-fill text-white"></i><span class="d-none d-lg-inline ps-2">Admin</span></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--****************************** MAIN ***********************************-->
+        <main>
+
+            <!--*** MAIN HEADER ***-->
+            <div class="main-header d-flex align-items-center">
+                <div class="row text-white w-100 pt-3 pb-1">
+
+                    <!-- NUOVO STUDENTE & FORM OFFCANVAS -->
+                    <div class="col-12 col-md-3 order-md-3 ps-4">
+                        <span class="me-2">Nuovo Studente</span>
+
+                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                            <i class="bi bi-plus-lg"></i>
+                          </button>
+                          
+                          <!-- OFFCANVAS -->
+                          <div class="offcanvas offcanvas-end vw-50" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title text-secondary" id="staticBackdropLabel">Inserisci un nuovo studente</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body text-dark">
+
+                                <!--*** FORM ***-->
+                                <form>
+                                    <div class="row text-secondary">
+
+                                        <!--NOME-->
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="nome" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="nome">
+                                        </div>
+
+                                        <!--COGNOME-->
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="cognome" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="cognome">
+                                        </div>
+
+                                        <!--EMAIL-->
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="esempio: mariorossi@gmail.com">
+                                        </div>
+
+                                        <!--PASSWORD-->
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+
+                                        <!--INDIRIZZO-->
+                                        <div class="col-12 mb-3">
+                                            <label for="indirizzo" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="indirizzo">
+                                        </div>
+
+                                        <!--CITTA'-->
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="citta" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="citta">
+                                        </div>
+
+                                        <!--STATO-->
+                                        <div class="col-12 col-md-4 mb-3">
+                                            <label for="stato" class="form-label">Stato</label>
+                                            <select class="form-select text-secondary" aria-label="Default select example">
+                                            <option selected>Scegli...</option>
+                                            </select>
+                                        </div>
+
+                                        <!--CAP-->
+                                        <div class="col-12 col-md-2 mb-3">
+                                            <label for="cap" class="form-label">CAP</label>
+                                            <input type="text" class="form-control" id="cap"
+                                            maxlength="5">
+                                        </div>
+
+                                        <!--FOTO-->
+                                        <div class="col-12 mb-3">
+                                            <label for="formFile" class="form-label">Foto</label>
+                                            <input class="form-control text-secondary" type="file" id="formFile">
+                                        </div>
+
+                                        <!--CHECKBOX-->
+                                        <div class="col-12 mb-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Seleziona per proseguire
+                                            </label>
+                                        </div>
+                                        
+                                        <!--FORM ACTIONS-->
+                                        <div class="col-12 mb-3">
+                                            <button type="button" class="btn btn-primary">Salva</button>
+                                            <button type="button" class="btn btn-warning">Svuota</button>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+
+                    
+                    </div>
+
+                    <!-- BOOLEAN & PILLS BADGES-->
+                    <div class="col-12 col-md-5 order-md-1 ps-4">
+
+                        <p class="fs-3">Boolean <span class="badge rounded-pill my-badge">Piano blaze</span></p>
+                        <span class="badge rounded-pill my-badge">3 app</span>
+                        <span class="fw-bold">>></span>
+                        <a class="badge rounded-circle my-badge d-lg-none"><i class="bi bi-plus-lg"></i></a>
+                        <span class="badge rounded-pill my-badge d-none d-lg-inline">Boolean mobile app</span>
+                        <span class="badge rounded-pill my-badge d-none d-lg-inline">Boolean web app</span>
+                        <span class="badge rounded-pill my-badge d-none d-lg-inline">Boolean blog app</span>
+
+                    </div>
+
+                    <!-- COUNTER -->
+                    <div class="col-12 col-md-4 order-md-2 ps-4 py-1">
+                        <p>Studenti online negli ultimi 30 minuti</p>
+                        <p class="fs-3">125</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--*** MAIN CONTENT ***-->
+            <div class="main-content"></div>
+        </main>
+    </div>
+
+    <!--******************************** JS LINK *****************************************-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 

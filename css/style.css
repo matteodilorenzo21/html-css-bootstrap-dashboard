@@ -1,3 +1,6 @@
+.page-header {
+    height: 56px
+}
 
 .navbar-default .logo-sm {
     height: 50px;
@@ -9,11 +12,44 @@
     width: 150px;
 }
 
+.wrapper {
+    height: calc(100vh - 56px);
+    display: flex;
+}
 
 .sidebar {
-    height: 100vh;
-    position: fixed;
+    flex: 0 0 65px;
     background:linear-gradient(45deg, #0E263C 75%, #051E34 25%);
   background:-webkit-linear-gradient(45deg, #0E263C 75%, #051E34 25%);
 }
 
+main {
+    flex: 1 1 auto;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.main-header {
+    min-height: 100px;
+    background-color: #1B72E8;
+}
+
+.my-badge {
+    font-size: 10px;
+    background-color: #165BBA;
+}
+
+.offcanvas {
+    min-width: 100vw;
+}
+
+/****** MEDIA QUERY ******/
+@media screen and (min-width: 992px) {
+    .sidebar {
+        flex-basis: 130px;
+    }
+
+    .offcanvas {
+        min-width: 50vw;
+    }
+}
